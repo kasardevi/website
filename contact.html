@@ -4,28 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Kasar Devi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <h1>Contact Us</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="process.html">Our Process</a></li>
+<body class="bg-gray-50 text-gray-900 font-sans">
+    <header class="text-center py-12">
+        <h1 class="text-4xl font-bold text-red-700 uppercase tracking-wider">Get in Touch</h1>
+        <p class="mt-3 text-lg text-gray-600">We’d love to hear from you!</p>
+        <nav class="mt-6">
+            <ul class="flex justify-center space-x-8 text-lg">
+                <li><a href="index.html" class="text-red-700 hover:text-red-900 transition duration-300">Home</a></li>
+                <li><a href="about.html" class="text-red-700 hover:text-red-900 transition duration-300">About Us</a></li>
+                <li><a href="products.html" class="text-red-700 hover:text-red-900 transition duration-300">Products</a></li>
+                <li><a href="process.html" class="text-red-700 hover:text-red-900 transition duration-300">Our Process</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h2>Get in Touch</h2>
-        <p>Email us at <a href="mailto:contact@kasardevi.in">contact@kasardevi.in</a></p>
-        <p>Follow us on Instagram: <a href="#">@kasardevi</a></p>
+    <!-- Contact Options -->
+    <section class="text-center py-16 px-6">
+        <h2 class="text-3xl font-semibold text-gray-800">Reach Us Anytime</h2>
+        <p class="mt-4 max-w-3xl mx-auto text-gray-600 text-lg">
+            Whether you have a question, need assistance, or just want to say hi—our team is here for you.
+        </p>
+
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+            <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+                <h3 class="text-xl font-bold text-red-700">📞 Call / WhatsApp</h3>
+                <p class="text-gray-600 mt-2">+91 94259 30700</p>
+                <a href="https://wa.me/919425930700" class="mt-4 inline-block bg-red-700 text-white px-5 py-2 rounded-lg text-lg font-semibold hover:bg-red-800 transition duration-300">
+                    Message on WhatsApp
+                </a>
+            </div>
+            <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+                <h3 class="text-xl font-bold text-red-700">📩 Email Us</h3>
+                <p class="text-gray-600 mt-2">pure@kasardevi.in</p>
+                <a href="mailto:pure@kasardevi.in" class="mt-4 inline-block bg-red-700 text-white px-5 py-2 rounded-lg text-lg font-semibold hover:bg-red-800 transition duration-300">
+                    Send an Email
+                </a>
+            </div>
+            <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+                <h3 class="text-xl font-bold text-red-700">📷 Instagram</h3>
+                <p class="text-gray-600 mt-2">@kasardevi.in</p>
+                <a href="https://instagram.com/kasardevi.in" target="_blank" class="mt-4 inline-block bg-red-700 text-white px-5 py-2 rounded-lg text-lg font-semibold hover:bg-red-800 transition duration-300">
+                    Visit Instagram
+                </a>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>© 2025 Kasar Devi | The Promise of Purity</p>
+    <!-- Office Address -->
+    <section class="text-center bg-gray-200 py-12 px-6">
+        <h2 class="text-3xl font-semibold text-gray-800">Visit Our Office</h2>
+        <p class="mt-4 max-w-3xl mx-auto text-gray-600 text-lg">
+            Kasar Devi Wellness Private Limited<br>
+            Shreenath Plaza, 76 Tagore Marg, Neemuch 458441
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-gray-100">
+        <p class="text-gray-700">© 2025 Kasar Devi | The Promise of Purity</p>
     </footer>
 </body>
 </html>
