@@ -1,16 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-  .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-  }
-  .fade-in.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,8 +8,10 @@
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
     <header class="text-center py-12">
-        <h1 class="text-4xl font-bold text-red-700 uppercase tracking-wider">About Kasar Devi</h1>
-        <nav class="fixed top-0 left-0 w-full bg-white shadow-md py-4 z-50">
+        <h1 class="text-5xl font-extrabold text-red-700 uppercase tracking-wide leading-tight">
+            About <span class="text-gray-800">Kasar Devi</span>
+        </h1>
+        <nav class="mt-6">
             <ul class="flex justify-center space-x-8 text-lg">
                 <li><a href="index.html" class="text-red-700 hover:text-red-900 transition duration-300">Home</a></li>
                 <li><a href="products.html" class="text-red-700 hover:text-red-900 transition duration-300">Products</a></li>
@@ -30,24 +21,40 @@
         </nav>
     </header>
 
-    <section class="text-center py-20 px-6 md:px-12">
+    <section class="text-center py-16 px-6">
         <h2 class="text-3xl font-semibold text-gray-800">Our Story</h2>
         <p class="mt-4 max-w-3xl mx-auto text-gray-600 text-lg">
             Kasar Devi Almond Oil is inspired by the serene temple village in Uttarakhand, where purity and nature blend harmoniously. 
             We source the finest **Kashmiri Mamra almonds** directly from farmers and cold-press them with care in our **small-batch processing unit**. 
         </p>
-        <div class="mt-10 flex flex-wrap justify-center gap-8">
-            <div class="bg-white shadow-lg p-6 rounded-lg w-80">
-                <h3 class="text-xl font-bold text-red-700">Handpicked Kashmiri Mamra Almonds</h3>
-                <p class="text-gray-600 mt-2">Sourced directly from the valley, ensuring purity and authenticity.</p>
+    </section>
+
+    <section class="py-12 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-red-700">Handpicked Kashmiri Mamra Almonds</h3>
+                    <p class="text-gray-600 mt-2">
+                        Sourced directly from the valley, ensuring purity and authenticity.
+                    </p>
+                </div>
+                <div class="bg-white shadow-lg p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-gray-700">Why It Matters?</h3>
+                    <p class="text-gray-600 mt-2">Mamra almonds are **richer in oil content** and have **higher nutrition levels** compared to other varieties.</p>
+                </div>
             </div>
-            <div class="bg-white shadow-lg p-6 rounded-lg w-80">
-                <h3 class="text-xl font-bold text-red-700">Cold-Pressed Perfection</h3>
-                <p class="text-gray-600 mt-2">Our traditional extraction process retains all nutrients.</p>
-            </div>
-            <div class="bg-white shadow-lg p-6 rounded-lg w-80">
-                <h3 class="text-xl font-bold text-red-700">Premium & Unfiltered</h3>
-                <p class="text-gray-600 mt-2">No chemicals, no preservatives—just pure almond oil.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12">
+                <div class="order-last md:order-first bg-white shadow-lg p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-gray-700">Cold-Pressed Perfection</h3>
+                    <p class="text-gray-600 mt-2">Our traditional extraction process retains all nutrients.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-red-700">Traditional Cold-Pressing</h3>
+                    <p class="text-gray-600 mt-2">
+                        Unlike refined oils, we use a **cold-press expeller**, where almonds are **pressed at low temperatures**, ensuring **zero nutrient loss**.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
