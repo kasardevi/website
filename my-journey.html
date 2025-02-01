@@ -4,45 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Journey - Kasar Devi</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #f9f9f9; color: #333; }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-100">
 
-    <!-- Navigation Bar -->
-    <nav class="flex justify-center space-x-8 py-4 text-gray-900 font-medium">
-        <a href="index.html" class="hover:text-gray-600">Home</a>
-        <a href="products.html" class="hover:text-gray-600">Products</a>
-        <a href="process.html" class="text-gray-900 font-semibold border-b-2 border-gray-700">Process</a>
-        <a href="contact.html" class="hover:text-gray-600">Contact</a>
-        <a href="my-journey.html" class="text-red-500 font-semibold tracking-wide">My Journey</a>
+    <!-- 🔹 Navigation Bar -->
+    <nav class="fixed top-0 w-full bg-white shadow-md py-4 px-6">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">Kasar Devi</a>
+            <div>
+                <a href="index.html#products" class="mr-6 text-gray-700 hover:text-gray-900">Products</a>
+                <a href="process.html" class="mr-6 text-gray-700 hover:text-gray-900">Process</a>
+                <a href="my-journey.html" class="text-gray-900 font-semibold">My Journey</a>
+                <a href="index.html#contact" class="text-gray-700 hover:text-gray-900">Contact</a>
+            </div>
+        </div>
     </nav>
 
-    <!-- Cover Image -->
-    <div class="relative w-full">
-        <img src="assets/my-journey/bike-cover.jpg" alt="My Journey" class="w-full h-72 object-cover">
-        <div class="absolute inset-0 bg-black opacity-40"></div>
-        <h1 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-semibold">My Journey</h1>
-    </div>
+    <!-- 🔹 Hero Section (Cover Image) -->
+    <section class="relative w-full h-[70vh] bg-black">
+        <img src="assets/my-journey/bike-cover.jpg" alt="Biking Across Landscapes" class="w-full h-full object-cover opacity-80">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <h1 class="text-white text-5xl md:text-6xl font-extrabold drop-shadow-lg">My Journey</h1>
+        </div>
+    </section>
 
-    <!-- Story Content -->
-    <div class="max-w-3xl mx-auto mt-10 px-6 text-lg leading-relaxed">
-        <p>Back in 2019, fresh out of college, I had no plans set in stone. I started backpacking across Himachal, Uttarakhand, Goa, and Karnataka, taking up volunteering gigs in homestays, hostels, and eco-retreats. Then came my first real encounter with farming—at Varanashi Organic Farms in Karnataka.</p>
+    <!-- 🔹 Section 1: The First Seeds of Passion -->
+    <section class="py-16 px-6 md:px-12 lg:px-24 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-gray-900 mb-4">The First Seeds of Passion</h2>
+            <p class="text-gray-700 leading-relaxed">
+                I graduated in 2019 from Christ University, Bangalore, and soon found myself wandering, backpacking, 
+                volunteering across Himachal, Uttaranchal, Karnataka & Goa...
+            </p>
+        </div>
+        
+        <!-- Image Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 max-w-4xl mx-auto">
+            <img src="assets/my-journey/varanashi-farm-1.jpg" alt="Varanashi Farm" class="rounded-lg shadow-md">
+            <img src="assets/my-journey/varanashi-farm-2.jpg" alt="Working on the Farm" class="rounded-lg shadow-md">
+        </div>
+    </section>
 
-        <p>The days were raw—sweating under the sun, working alongside farmers, eating fresh organic food straight from the land. By the time my volunteering ended, I felt a change—physically, mentally, and emotionally. Looking back, I didn’t realize then how deeply that experience would shape my future.</p>
+    <!-- 🔹 Section 2: The Search for Meaning -->
+    <section class="py-16 px-6 md:px-12 lg:px-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-gray-900 mb-4">The Search for Meaning</h2>
+            <p class="text-gray-700 leading-relaxed">
+                When the pandemic shut everything down, my travels came to an abrupt halt...
+            </p>
+        </div>
 
-        <p>Then COVID happened, and everything paused. My travel stopped. I found myself back home, involved in the family business—something that never quite felt like me. I attempted CFA as a way out, but when that didn’t work, I spiraled into uncertainty. That’s when I turned towards wellness, not as a business but as a way to heal myself.</p>
+        <!-- Image Grid -->
+        <div class="grid grid-cols-2 gap-4 mt-6 max-w-4xl mx-auto">
+            <img src="assets/my-journey/bathroom-shelf.jpg" alt="Bathroom Experiments" class="rounded-lg shadow-md">
+            <img src="assets/my-journey/writing-ideas.jpg" alt="Notebooks & Ideas" class="rounded-lg shadow-md">
+        </div>
+    </section>
 
-        <p>Wellness became an obsession. The perfectionist in me wanted the **best** herbs, the **purest** ingredients. My curiosity led me back to farmers, sourcing directly from the land, just like I had done at Varanashi. That’s when something clicked.</p>
+    <!-- 🔹 Section 3: Early Experiments -->
+    <section class="py-16 px-6 md:px-12 lg:px-24 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-gray-900 mb-4">Building Something Beautiful, But Not Quite Right</h2>
+            <p class="text-gray-700 leading-relaxed">
+                As my knowledge grew, I wanted to turn it into something tangible...
+            </p>
+        </div>
 
-        <p>From there, I started experimenting—sourcing organic **Amla & Moringa**, processing them at home, branding them into high-quality wellness products. But the market was flooded with similar things. I shifted towards **natural cosmetics** and **Ayurvedic oils**—developing formulations for face masques, herbal cleansers, hair oils. But then, reality hit. Manufacturing cosmetics required extensive licenses, industrial setups, and a team of Ayurvedic doctors—something I wasn’t ready to compromise my freedom for.</p>
+        <!-- Image Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6 max-w-4xl mx-auto">
+            <img src="assets/my-journey/herb-processing-1.jpg" alt="Herb Processing" class="rounded-lg shadow-md">
+            <img src="assets/my-journey/herb-processing-2.jpg" alt="Drying Herbs" class="rounded-lg shadow-md">
+            <img src="assets/my-journey/powder-prep.jpg" alt="Powder Preparation" class="rounded-lg shadow-md">
+        </div>
+    </section>
 
-        <p>Then came Almond Oil. I was already making it as an ingredient for my oils. I had trusted sourcing in Kashmir, and my processing setup was in place. It made sense to dedicate myself fully to this. I moved my setup to my home’s drawing room to ensure **absolute quality control and a homemade essence.** Now, this is what I do—every single step, from sourcing to crafting, is something I enjoy deeply.</p>
+    <!-- 🔹 Section 4: Finding Almond Oil -->
+    <section class="py-16 px-6 md:px-12 lg:px-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-gray-900 mb-4">Almond Oil: Where Everything Came Together</h2>
+            <p class="text-gray-700 leading-relaxed">
+                I was already producing almond oil for my herbal formulations...
+            </p>
+        </div>
 
-        <p>Kasar Devi Almond Oil isn’t just a business—it’s a process, a journey, and a pursuit of purity.</p>
-    </div>
+        <!-- Image Grid -->
+        <div class="grid grid-cols-2 gap-4 mt-6 max-w-4xl mx-auto">
+            <img src="assets/my-journey/oil-processing-1.jpg" alt="Oil Extraction" class="rounded-lg shadow-md">
+            <img src="assets/my-journey/oil-bottling.jpg" alt="Bottling Process" class="rounded-lg shadow-md">
+        </div>
+    </section>
+
+    <!-- 🔹 Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-lg font-semibold text-white">Kasar Devi Wellness Private Limited</h3>
+                <p class="text-sm text-gray-400">Crafting the Purest Almond Oil with Devotion</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="index.html#products" class="text-gray-400 hover:text-white transition">Products</a>
+                <a href="process.html" class="text-gray-400 hover:text-white transition">Process</a>
+                <a href="my-journey.html" class="text-gray-400 hover:text-white transition">My Journey</a>
+                <a href="index.html#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+            </div>
+            <div class="mt-6 md:mt-0 text-sm text-gray-500">
+                © <span id="year"></span> Kasar Devi Wellness Private Limited. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
 </body>
 </html>
