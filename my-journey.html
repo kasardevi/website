@@ -4,45 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Journey - Kasar Devi</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #f9f9f9; color: #333; }
+        /* Cover Image Styling */
+        .cover-image {
+            width: 100%;
+            height: 80vh; /* Adjust for best fit */
+            object-fit: cover;
+        }
+        /* Blog Content Styling */
+        .blog-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 40px 20px;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        .blog-container h2 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 20px;
+        }
+        .blog-container p {
+            color: #555;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
-<body>
+<body class="bg-gray-100">
 
-    <!-- Navigation Bar -->
-    <nav class="flex justify-center space-x-8 py-4 text-gray-900 font-medium">
-        <a href="index.html" class="hover:text-gray-600">Home</a>
-        <a href="products.html" class="hover:text-gray-600">Products</a>
-        <a href="process.html" class="text-gray-900 font-semibold border-b-2 border-gray-700">Process</a>
-        <a href="contact.html" class="hover:text-gray-600">Contact</a>
-        <a href="my-journey.html" class="text-red-500 font-semibold tracking-wide">My Journey</a>
+    <!-- 🔹 Navigation Bar -->
+    <nav class="fixed top-0 w-full bg-white shadow-md py-4 px-6 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">Kasar Devi</a>
+            <div>
+                <a href="index.html#products" class="mr-6 text-gray-700 hover:text-gray-900">Products</a>
+                <a href="process.html" class="mr-6 text-gray-700 hover:text-gray-900">Process</a>
+                <a href="my-journey.html" class="text-gray-900 font-semibold">My Journey</a>
+                <a href="index.html#contact" class="text-gray-700 hover:text-gray-900">Contact</a>
+            </div>
+        </div>
     </nav>
 
-    <!-- Cover Image -->
-    <div class="relative w-full">
-        <img src="assets/my-journey/bike-cover.jpg" alt="My Journey" class="w-full h-72 object-cover">
-        <div class="absolute inset-0 bg-black opacity-40"></div>
-        <h1 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-semibold">My Journey</h1>
-    </div>
+    <!-- 🔹 Cover Image -->
+    <section class="relative mt-16">
+        <img src="assets/my-journey/bike-cover.jpg" alt="My Journey Cover" class="cover-image">
+    </section>
 
-    <!-- Story Content -->
-    <div class="max-w-3xl mx-auto mt-10 px-6 text-lg leading-relaxed">
-        <p>Back in 2019, fresh out of college, I had no plans set in stone. I started backpacking across Himachal, Uttarakhand, Goa, and Karnataka, taking up volunteering gigs in homestays, hostels, and eco-retreats. Then came my first real encounter with farming—at Varanashi Organic Farms in Karnataka.</p>
+    <!-- 🔹 Blog Content -->
+    <section class="blog-container">
+        <h2>The First Seeds of Passion</h2>
+        <p>I graduated in 2019 from Christ University, Bangalore, and soon found myself wandering, backpacking, volunteering across Himachal, Uttarakhand, Karnataka & Goa. I volunteered at farms, hostels, home-stays, eco-retreats—immersing myself in different cultures, learning new skills, and absorbing the world in its rawest form.</p>
+        <p>But one experience stood out.</p>
+        <p>My time at Varanashi Organic Farms, near Mangalore, changed something in me. It was the first time I saw the impact of clean eating, physical labor, and community living. The rhythm of farm life, the way nature and effort intertwined—it left an imprint. By the end of my time there, something had changed—my body felt lighter, healthier, and more in tune with nature.</p>
+        <p>Little did I know then that this experience would shape everything I’d pursue in the years to come.</p>
 
-        <p>The days were raw—sweating under the sun, working alongside farmers, eating fresh organic food straight from the land. By the time my volunteering ended, I felt a change—physically, mentally, and emotionally. Looking back, I didn’t realize then how deeply that experience would shape my future.</p>
+        <h2>The Search for Meaning</h2>
+        <p>When the pandemic shut everything down, my travel came to an abrupt halt. I returned home and joined the family business, but it didn’t carry the spark—something was missing. Seeking an escape, I attempted CFA, but failure in the exam threw me into a deep period of uncertainty and chaos.</p>
+        <p>That’s when I turned to wellness—not as a business idea, but as a personal necessity. I became obsessed with sourcing the finest herbs, the purest oils, and the most authentic ingredients for myself. I began experimenting in my own home. My bathroom became a mini lab.</p>
+        <p>Then, something clicked. I traced everything back to the source—farmers. I realized my early memories at Varanashi Organic Farms were still alive inside me. I wasn’t just interested in wellness—I wanted to work with raw, untouched nature.</p>
 
-        <p>Then COVID happened, and everything paused. My travel stopped. I found myself back home, involved in the family business—something that never quite felt like me. I attempted CFA as a way out, but when that didn’t work, I spiraled into uncertainty. That’s when I turned towards wellness, not as a business but as a way to heal myself.</p>
+        <h2>Building Something Beautiful, But Not Quite Right</h2>
+        <p>As my knowledge grew, I wanted to turn it into something tangible. I began sourcing organic Amla & Moringa, processing them into powders, and designing the branding.</p>
+        <p>But as I got deeper into it, I realized the market was flooded with similar products. Despite maintaining the highest quality, I didn’t have a strong differentiator.</p>
+        <p>I pivoted towards natural cosmetics & Ayurvedic oils—creating face masques, herbal body cleansers, hair oils, and nasya oils. The products were excellent, but I hit an unexpected roadblock: Government regulations for commercial production of these products required:</p>
+        <ul class="list-disc pl-6 text-gray-700">
+            <li>Processing facilities in an industrial area.</li>
+            <li>I would need an Ayurvedic doctor & analytical chemist on board.</li>
+            <li>The process would consume all my time and resources, turning me into a factory operator instead of a creator.</li>
+        </ul>
+        <p>I didn’t want that. I wanted freedom & simplicity—not a bureaucratic maze.</p>
 
-        <p>Wellness became an obsession. The perfectionist in me wanted the **best** herbs, the **purest** ingredients. My curiosity led me back to farmers, sourcing directly from the land, just like I had done at Varanashi. That’s when something clicked.</p>
+        <h2>Almond Oil: Where Everything Came Together</h2>
+        <p>I was already producing almond oil for my herbal formulations. I had:</p>
+        <ul class="list-disc pl-6 text-gray-700">
+            <li>A trusted sourcing network in Kashmir.</li>
+            <li>My own small-scale oil processing setup.</li>
+            <li>A deep understanding of purity & quality control.</li>
+        </ul>
+        <p>That’s when it clicked—instead of dividing my energy across multiple products, why not go all in on creating the purest almond oil?</p>
+        <p>Unlike herbs and complex formulations, almond oil was pure, singular, and timeless. It didn’t need a complicated value proposition. It just needed to be the finest in its purest form.</p>
+        <p>So I shut down everything else and decided to focus entirely on almond oil.</p>
+        <p>With the start of 2025, I shifted my processing setup to my home’s drawing room, ensuring absolute hygiene and a homemade touch. Now I build something which feels personal and sacred. Every single bottle is crafted with intent, precision, and care.</p>
+        <p>And here I am today—completely immersed in the process of sourcing, crafting, and delivering the best almond oil possible.</p>
+        <p>This journey wasn’t planned. It evolved naturally. But when I look back, I see how every failure, every experiment, and every struggle led me here.</p>
+        <p><strong>This is not just a business. It’s my devotion.</strong></p>
+    </section>
 
-        <p>From there, I started experimenting—sourcing organic **Amla & Moringa**, processing them at home, branding them into high-quality wellness products. But the market was flooded with similar things. I shifted towards **natural cosmetics** and **Ayurvedic oils**—developing formulations for face masques, herbal cleansers, hair oils. But then, reality hit. Manufacturing cosmetics required extensive licenses, industrial setups, and a team of Ayurvedic doctors—something I wasn’t ready to compromise my freedom for.</p>
+    <!-- 🔹 Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10 px-6 text-center">
+        <p class="text-sm text-gray-500">© <span id="year"></span> Kasar Devi Wellness Private Limited. All Rights Reserved.</p>
+    </footer>
 
-        <p>Then came Almond Oil. I was already making it as an ingredient for my oils. I had trusted sourcing in Kashmir, and my processing setup was in place. It made sense to dedicate myself fully to this. I moved my setup to my home’s drawing room to ensure **absolute quality control and a homemade essence.** Now, this is what I do—every single step, from sourcing to crafting, is something I enjoy deeply.</p>
-
-        <p>Kasar Devi Almond Oil isn’t just a business—it’s a process, a journey, and a pursuit of purity.</p>
-    </div>
+    <!-- JavaScript to Update Year Automatically -->
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
 </body>
 </html>
