@@ -3,72 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Journey | Kasar Devi</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>My Journey - Kasar Devi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9f9f9; color: #333; }
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body>
 
-    <!-- Hero Section -->
-    <section class="relative bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('assets/my-journey/cover-image.png');">
-        <div class="bg-black bg-opacity-50 w-full h-full absolute"></div>
-        <div class="relative text-center text-white px-8">
-            <h1 class="text-4xl md:text-6xl font-bold">My Journey</h1>
-            <p class="text-lg md:text-xl mt-4">A Path of Discovery, Passion & Craftsmanship</p>
-        </div>
-    </section>
+    <!-- Navigation Bar -->
+    <nav class="flex justify-center space-x-8 py-4 text-gray-900 font-medium">
+        <a href="index.html" class="hover:text-gray-600">Home</a>
+        <a href="products.html" class="hover:text-gray-600">Products</a>
+        <a href="process.html" class="text-gray-900 font-semibold border-b-2 border-gray-700">Process</a>
+        <a href="contact.html" class="hover:text-gray-600">Contact</a>
+        <a href="my-journey.html" class="text-red-500 font-semibold tracking-wide">My Journey</a>
+    </nav>
 
-    <!-- Section 1: Varanashi Organic Farm -->
-    <section class="max-w-4xl mx-auto my-16 px-6">
-        <img src="assets/my-journey/varanashi-farm.png" class="w-full rounded-lg shadow-lg mb-6" alt="Varanashi Organic Farm">
-        <h2 class="text-3xl font-semibold mb-4">A Seed of Curiosity</h2>
-        <p class="text-lg leading-relaxed">
-            My journey started in 2019 when I volunteered at <strong>Varanashi Organic Farms</strong>, near Mangalore, Karnataka. 
-            I spent my days working alongside farmers, understanding the essence of organic agriculture, and experiencing firsthand how nature and wellness are deeply intertwined.
-            Little did I know, this experience would plant the seed for what I do today.
-        </p>
-    </section>
+    <!-- Cover Image -->
+    <div class="relative w-full">
+        <img src="assets/my-journey/cover.png" alt="My Journey" class="w-full h-72 object-cover">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <h1 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-semibold">My Journey</h1>
+    </div>
 
-    <!-- Section 2: Experiments in Personal Wellness -->
-    <section class="max-w-4xl mx-auto my-16 px-6">
-        <img src="assets/my-journey/bathroom-shelf.png" class="w-full rounded-lg shadow-lg mb-6" alt="Experiments with wellness products">
-        <h2 class="text-3xl font-semibold mb-4">A Deep Dive into Wellness</h2>
-        <p class="text-lg leading-relaxed">
-            After my travels, I found myself exploring the world of <strong>wellness</strong> more deeply. 
-            My bathroom shelf was soon filled with herbs, powders, and oils as I experimented with self-care formulations.
-            I became obsessed with sourcing the finest herbs and understanding their properties—an obsession that naturally led me back to the farmers.
-        </p>
-    </section>
+    <!-- Story Content -->
+    <div class="max-w-3xl mx-auto mt-10 px-6 text-lg leading-relaxed">
+        <p>Back in 2019, fresh out of college, I had no plans set in stone. I started backpacking across Himachal, Uttarakhand, Goa, and Karnataka, taking up volunteering gigs in homestays, hostels, and eco-retreats. Then came my first real encounter with farming—at Varanashi Organic Farms in Karnataka.</p>
 
-    <!-- Section 3: Early Processing Experiments -->
-    <section class="max-w-4xl mx-auto my-16 px-6">
-        <img src="assets/my-journey/home-processing.png" class="w-full rounded-lg shadow-lg mb-6" alt="Processing herbs at home">
-        <h2 class="text-3xl font-semibold mb-4">From Experimentation to Creation</h2>
-        <p class="text-lg leading-relaxed">
-            I started <strong>small-batch processing</strong> of herbs like Amla and Moringa in my home setup. 
-            Drying, grinding, and packaging them into pure wellness products—it was an exciting phase.
-            But soon, I realized that creating a truly unique and meaningful brand required focus and refinement.
-        </p>
-    </section>
+        <p>The days were raw—sweating under the sun, working alongside farmers, eating fresh organic food straight from the land. By the time my volunteering ended, I felt a change—physically, mentally, and emotionally. Looking back, I didn’t realize then how deeply that experience would shape my future.</p>
 
-    <!-- Section 4 & 5 (Future Images & Story) -->
-    <section class="max-w-4xl mx-auto my-16 px-6">
-        <h2 class="text-3xl font-semibold mb-4">A Shift in Focus</h2>
-        <p class="text-lg leading-relaxed">
-            As I ventured into <strong>natural cosmetics and Ayurvedic oils</strong>, I discovered that regulatory challenges made large-scale production difficult.
-            But I also found clarity—what if I dedicated myself fully to <strong>one product, perfected to its finest form?</strong>
-            That's when I turned my attention to <strong>almond oil</strong>.
-        </p>
-        <p class="text-lg leading-relaxed mt-4">
-            I set up my own <strong>small-scale processing unit</strong> at home, ensuring purity, hygiene, and a handcrafted touch.
-            Every step, from sourcing almonds in Kashmir to pressing the oil, became a process I deeply enjoy.
-            <strong>Kasar Devi Almond Oil</strong> was born—not just as a product, but as a philosophy of purity and craftsmanship.
-        </p>
-    </section>
+        <p>Then COVID happened, and everything paused. My travel stopped. I found myself back home, involved in the family business—something that never quite felt like me. I attempted CFA as a way out, but when that didn’t work, I spiraled into uncertainty. That’s when I turned towards wellness, not as a business but as a way to heal myself.</p>
 
-    <!-- Footer -->
-    <footer class="text-center py-8 bg-gray-800 text-white">
-        <p class="text-lg">&copy; 2025 Kasar Devi. All rights reserved.</p>
-    </footer>
+        <p>Wellness became an obsession. The perfectionist in me wanted the **best** herbs, the **purest** ingredients. My curiosity led me back to farmers, sourcing directly from the land, just like I had done at Varanashi. That’s when something clicked.</p>
+
+        <p>From there, I started experimenting—sourcing organic **Amla & Moringa**, processing them at home, branding them into high-quality wellness products. But the market was flooded with similar things. I shifted towards **natural cosmetics** and **Ayurvedic oils**—developing formulations for face masques, herbal cleansers, hair oils. But then, reality hit. Manufacturing cosmetics required extensive licenses, industrial setups, and a team of Ayurvedic doctors—something I wasn’t ready to compromise my freedom for.</p>
+
+        <p>Then came Almond Oil. I was already making it as an ingredient for my oils. I had trusted sourcing in Kashmir, and my processing setup was in place. It made sense to dedicate myself fully to this. I moved my setup to my home’s drawing room to ensure **absolute quality control and a homemade essence.** Now, this is what I do—every single step, from sourcing to crafting, is something I enjoy deeply.</p>
+
+        <p>Kasar Devi Almond Oil isn’t just a business—it’s a process, a journey, and a pursuit of purity.</p>
+    </div>
 
 </body>
 </html>
