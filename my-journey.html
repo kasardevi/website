@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Journey - Kasar Devi</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Cover Image Styling */
+        .cover-image {
+    width: 100%;
+    height: 60vh; /* Adjusted for balance */
+    object-fit: cover;
+    object-position: center bottom; /* Ensures bottom (bike) is retained */
+}
+        /* Blog Content Styling */
+        .blog-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 40px 20px;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        .blog-container h2 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 20px;
+        }
+        .blog-container p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
 
@@ -12,91 +39,67 @@
     <nav class="fixed top-0 w-full bg-white shadow-md py-4 px-6 z-50">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
             <a href="index.html" class="text-2xl font-bold">Kasar Devi</a>
-            <div>
-                <a href="index.html#products" class="mr-6 text-gray-700 hover:text-gray-900">Products</a>
-                <a href="process.html" class="mr-6 text-gray-700 hover:text-gray-900 font-semibold">Process</a>
-                <a href="my-journey.html" class="text-gray-900 hover:text-gray-600">My Journey</a>
-                <a href="index.html#contact" class="text-gray-700 hover:text-gray-900">Contact</a>
+            <div class="space-x-6">
+                <a href="index.html#products" class="text-gray-700 hover:text-gray-900">Products</a>
+                <a href="process.html" class="text-gray-700 hover:text-gray-900">Process</a>
+                <a href="my-journey.html" class="text-gray-900 font-semibold">My Journey</a>
+                <a href="index.html#contact" class="text-gray-700 hover:text-gray-900 ml-6">Contact</a> <!-- Added spacing -->
             </div>
         </div>
     </nav>
 
-    <!-- 🔹 Cover Image (Correctly Sized & Cropped) -->
-    <section class="relative h-[50vh] w-full overflow-hidden">
-        <img src="assets/my-journey/bike-cover.jpg" alt="Bike Journey" class="w-full h-full object-cover object-center">
-        <div class="absolute inset-0 bg-black opacity-30"></div>
-        <div class="absolute inset-0 flex items-center justify-center">
-            <h1 class="text-white text-4xl md:text-6xl font-extrabold drop-shadow-lg text-center">
-                My Journey
-            </h1>
-        </div>
+    <!-- 🔹 Cover Image -->
+    <section class="relative mt-16">
+        <img src="assets/my-journey/bike-cover.jpg" alt="My Journey Cover" class="cover-image">
     </section>
 
-    <!-- 🔹 Blog Section -->
-    <section class="py-20 px-6 md:px-12 lg:px-24 bg-white">
-        <div class="max-w-4xl mx-auto">
+    <!-- 🔹 Blog Content -->
+    <section class="blog-container">
+        <h2>The First Seeds of Passion</h2>
+        <p>I graduated in 2019 from Christ University, Bangalore, and soon found myself wandering, backpacking, volunteering across Himachal, Uttarakhand, Karnataka & Goa. I volunteered at farms, hostels, home-stays, eco-retreats—immersing myself in different cultures, learning new skills, and absorbing the world in its rawest form.</p>
+        <p>But one experience stood out.</p>
+        <p>My time at Varanashi Organic Farms, near Mangalore, changed something in me. It was the first time I saw the impact of clean eating, physical labor, and community living. The rhythm of farm life, the way nature and effort intertwined—it left an imprint. By the end of my time there, something had changed—my body felt lighter, healthier, and more in tune with nature.</p>
+        <p>Little did I know then that this experience would shape everything I’d pursue in the years to come.</p>
 
-            <!-- 🔹 Section 1: First Seeds of Passion -->
-            <h2 class="text-3xl font-bold text-gray-900">The First Seeds of Passion</h2>
-            <p class="mt-6 text-lg text-gray-700 leading-relaxed">
-                I graduated in <strong>2019 from Christ University, Bangalore</strong>, and soon found myself wandering—backpacking, volunteering across Himachal, Uttarakhand, Karnataka, and Goa. I worked at farms, homestays, hostels, eco-retreats—absorbing different cultures, learning new skills, and experiencing life in its rawest form.
-            </p>
-            <p class="mt-4 text-lg text-gray-700 leading-relaxed">
-                But one experience stood out. During the <strong>monsoon of 2019, I volunteered at Varanashi Organic Farms</strong> near Mangalore. It was my first real exposure to farming. I worked alongside farmers, ate clean, organic food, and embraced the rhythm of the land.
-            </p>
-            <p class="mt-4 text-lg text-gray-700 leading-relaxed">
-                By the end of my time there, something had changed. My body felt lighter, healthier, and deeply connected to nature. 
-            </p>
+        <h2>The Search for Meaning</h2>
+        <p>When the pandemic shut everything down, my travel came to an abrupt halt. I returned home and joined the family business, but it didn’t carry the spark—something was missing. Seeking an escape, I attempted CFA, but failure in the exam threw me into a deep period of uncertainty and chaos.</p>
+        <p>That’s when I turned to wellness—not as a business idea, but as a personal necessity. I became obsessed with sourcing the finest herbs, the purest oils, and the most authentic ingredients for myself. I began experimenting in my own home. My bathroom became a mini lab.</p>
+        <p>Then, something clicked. I traced everything back to the source—farmers. I realized my early memories at Varanashi Organic Farms were still alive inside me. I wasn’t just interested in wellness—I wanted to work with raw, untouched nature.</p>
 
-            <!-- 🔹 Section 2: The Search for Meaning -->
-            <h2 class="text-3xl font-bold text-gray-900 mt-12">The Search for Meaning</h2>
-            <p class="mt-6 text-lg text-gray-700 leading-relaxed">
-                When the pandemic shut everything down, my travels came to an abrupt halt. I returned home and joined the <strong>family business</strong>, but I felt no soulfulness in it—something was missing. Seeking an escape, I attempted <strong>CFA</strong>, but <strong>failure in the exam</strong> threw me into a deep period of uncertainty and chaos.
-            </p>
-            <p class="mt-4 text-lg text-gray-700 leading-relaxed">
-                That’s when I turned to <strong>wellness—not as a business idea, but as a personal necessity.</strong> I became obsessed with <strong>sourcing the finest herbs, the purest oils, and the most authentic ingredients for myself.</strong> I started experimenting—my <strong>bathroom became a mini-lab.</strong>
-            </p>
+        <h2>Building Something Beautiful, But Not Quite Right</h2>
+        <p>As my knowledge grew, I wanted to turn it into something tangible. I began sourcing organic Amla & Moringa, processing them into powders, and designing the branding.</p>
+        <p>But as I got deeper into it, I realized the market was flooded with similar products. Despite maintaining the highest quality, I didn’t have a strong differentiator.</p>
+        <p>I pivoted towards natural cosmetics & Ayurvedic oils—creating face masques, herbal body cleansers, hair oils, and nasya oils. The products were excellent, but I hit an unexpected roadblock. Government regulations for commercial production required:</p>
+        <ul class="list-disc pl-6 text-gray-700">
+            <li>Processing facilities in an industrial area.</li>
+            <li>A licensed Ayurvedic doctor & analytical chemist on board.</li>
+            <li>A shift from small-batch handcrafted production to large-scale factory setups.</li>
+        </ul>
+        <p>The process would consume all my time and resources, turning me into a factory operator instead of a creator.</p>
+        <p>I didn’t want that. I wanted freedom & simplicity—not a bureaucratic maze.</p>
 
-            <!-- 🔹 Section 3: Building Something Beautiful, But Not Quite Right -->
-            <h2 class="text-3xl font-bold text-gray-900 mt-12">Building Something Beautiful, But Not Quite Right</h2>
-            <p class="mt-6 text-lg text-gray-700 leading-relaxed">
-                As my knowledge grew, I wanted to turn it into something tangible. I began sourcing <strong>organic Amla & Moringa, processing them into powders, and designing branding.</strong> But as I got deeper into it, I realized <strong>the market was flooded</strong> with similar products.
-            </p>
-            <p class="mt-4 text-lg text-gray-700 leading-relaxed">
-                I pivoted towards <strong>natural cosmetics & Ayurvedic oils</strong>—creating <strong>face masques, herbal body cleansers, hair oils, and nasya oils.</strong> The products were excellent, but I hit an unexpected roadblock. 
-            </p>
-            <p class="mt-4 text-lg text-gray-700 leading-relaxed">
-                Government regulations for commercial production required:
-            </p>
-            <ul class="mt-4 text-lg text-gray-700 leading-relaxed list-disc list-inside">
-                <li>✅ Processing facilities in an industrial area.</li>
-                <li>✅ A licensed Ayurvedic doctor & analytical chemist on board.</li>
-            </ul>
-            <p class="mt-4 text-lg text-gray-700 leading-relaxed">
-                The process would consume all my time and resources, turning me into a factory operator instead of a creator.
-            </p>
-
-            <!-- 🔹 Section 4: Where Everything Came Together -->
-            <h2 class="text-3xl font-bold text-gray-900 mt-12">Where Everything Came Together</h2>
-            <p class="mt-6 text-lg text-gray-700 leading-relaxed">
-                I was already producing almond oil for my <strong>herbal formulations.</strong> I had a <strong>trusted sourcing network in Kashmir</strong>, my own small-scale processing setup, and a deep understanding of purity.
-            </p>
-            <p class="mt-4 text-lg text-gray-700 leading-relaxed">
-                Instead of dividing my energy across multiple products, I decided to <strong>focus entirely on crafting the purest almond oil.</strong>
-            </p>
-
-        </div>
+        <h2>Almond Oil: Where Everything Came Together</h2>
+        <p>I was already producing almond oil for my herbal formulations. I had:</p>
+        <ul class="list-disc pl-6 text-gray-700">
+            <li>A trusted sourcing network in Kashmir.</li>
+            <li>My own small-scale oil processing setup.</li>
+            <li>A deep understanding of purity & quality control.</li>
+        </ul>
+        <p>That’s when it clicked—instead of dividing my energy across multiple products, why not go all in on creating the purest almond oil?</p>
+        <p>Unlike herbs and complex formulations, almond oil was pure, singular, and timeless. It didn’t need a complicated value proposition. It just needed to be the finest in its purest form.</p>
+        <p>So I shut down everything else and decided to focus entirely on almond oil.</p>
+        <p>With the start of 2025, I shifted my processing setup to my home’s drawing room, ensuring absolute hygiene and a homemade touch. Now I build something which feels personal and sacred. Every single bottle is crafted with intent, precision, and care.</p>
+        <p>And here I am today—completely immersed in the process of sourcing, crafting, and delivering the best almond oil possible.</p>
+        <p>This journey wasn’t planned. It evolved naturally. But when I look back, I see how every failure, every experiment, and every struggle led me here.</p>
+        <p><strong>This is not just a business. It’s my devotion.</strong></p>
     </section>
 
     <!-- 🔹 Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-10 px-6 md:px-12 lg:px-24">
-        <div class="max-w-6xl mx-auto text-center">
-            <h3 class="text-lg font-semibold text-white">Kasar Devi Wellness Private Limited</h3>
-            <p class="text-sm text-gray-400">Crafting the Purest Almond Oil with Devotion</p>
-            <p class="text-sm text-gray-500 mt-4">© <span id="year"></span> All Rights Reserved.</p>
-        </div>
+    <footer class="bg-gray-900 text-gray-300 py-10 px-6 text-center">
+        <p class="text-sm text-gray-500">© <span id="year"></span> Kasar Devi Wellness Private Limited. All Rights Reserved.</p>
     </footer>
 
+    <!-- JavaScript to Update Year Automatically -->
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
