@@ -3,163 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kasar Devi - Purest Almond Oil</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Kasar Devi - Premium Almond Oil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #fff; color: #333; }
+    </style>
 </head>
-<body class="bg-gray-100">
+<body>
 
-    <!-- 🔹 Navigation Bar -->
-    <nav class="fixed top-0 w-full bg-white shadow-md py-4 px-6">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-        <a href="index.html" class="text-2xl font-bold">Kasar Devi</a>
-        <div>
-            <a href="index.html#products" class="mr-6 text-gray-700 hover:text-gray-900">Products</a>
-            <a href="process.html" class="mr-6 text-gray-700 hover:text-gray-900 font-semibold">Process</a>
-            <a href="my-journey.html" class="text-gray-900 hover:text-gray-600">My Journey</a>
-            <a href="contact.html" class="text-gray-700 hover:text-gray-900">Contact</a>
-        </div>
-    </div>
-</nav>
+    <!-- Navigation Bar -->
+    <nav class="flex justify-center space-x-8 py-4 text-gray-900 font-medium">
+        <a href="index.html" class="hover:text-gray-600">Home</a>
+        <a href="products.html" class="hover:text-gray-600">Products</a>
+        <a href="process.html" class="text-gray-900 font-semibold border-b-2 border-gray-700">Process</a>
+        <a href="contact.html" class="hover:text-gray-600">Contact</a>
+        <a href="my-journey.html" class="text-red-500 font-semibold tracking-wide">My Journey</a>
+    </nav>
 
-<!-- 🔹 Hero Section (Improved Text Visibility) -->
-<section class="relative bg-gradient-to-b from-[#011046] to-[#050a30] text-white py-20 px-6 md:px-12 lg:px-24 mt-16">
-    <!-- Dark Overlay for Better Contrast -->
-    <div class="absolute inset-0 bg-black opacity-30"></div>
+    <!-- Hero Section -->
+    <header class="text-center py-16 bg-gray-100">
+        <h1 class="text-5xl font-semibold text-gray-900">Kasar Devi Almond Oil</h1>
+        <p class="mt-4 text-lg text-gray-600">Pure. Authentic. Crafted with care.</p>
+    </header>
 
-    <div class="max-w-6xl mx-auto text-center relative z-10">
-        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-white drop-shadow-lg">
-            The Purest Almond Oil, Crafted with Devotion
-        </h1>
-        <p class="mt-6 text-lg md:text-xl opacity-90 leading-relaxed text-gray-200 drop-shadow-md">
-            Sourced from the pristine orchards of Kashmir, cold-pressed in small batches, and 
-            hand-bottled with care—our oil is more than just a product, it’s a 
-            <strong class="text-white">promise of purity.</strong> Experience the <strong class="text-white">sacred essence</strong> of Kasar Devi in every drop.
-        </p>
-        <div class="mt-10">
-            <a href="#products" class="inline-block px-8 py-4 text-lg font-semibold 
-            rounded-full bg-[#FF4F4F] hover:bg-[#d93e3e] transition-all duration-300 shadow-lg">
-                Discover Our Promise
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- 🔹 Refined Products Section (No Tags) -->
-<section id="products" class="py-20 px-6 md:px-12 lg:px-24 bg-gray-50">
-    <div class="max-w-6xl mx-auto text-center">
-        <h2 class="text-4xl md:text-5xl font-semibold text-gray-900 tracking-wide">
-            Our Products
-        </h2>
-        <p class="mt-4 text-lg text-gray-600 font-light">
-            Cold-pressed Kashmiri Mamra Almond Oil, crafted with devotion.
-        </p>
-    </div>
-
-    <!-- Product Grid -->
-    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto">
-        
-        <!-- 30ml Variant -->
-        <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200 transition-transform transform hover:scale-105 hover:shadow-2xl">
-            <h3 class="text-xl font-bold text-gray-900 tracking-wide">30ml Almond Oil</h3>
-            <p class="text-gray-500 mt-2 italic text-lg">"Best for Trial & Travel"</p>
-        </div>
-
-        <!-- 100ml Variant -->
-        <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200 transition-transform transform hover:scale-105 hover:shadow-2xl">
-            <h3 class="text-xl font-bold text-gray-900 tracking-wide">100ml Almond Oil</h3>
-            <p class="text-gray-500 mt-2 italic text-lg">"For Regular Skincare & Wellness"</p>
-        </div>
-
-        <!-- 200ml Variant -->
-        <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200 transition-transform transform hover:scale-105 hover:shadow-2xl">
-            <h3 class="text-xl font-bold text-gray-900 tracking-wide">200ml Almond Oil</h3>
-            <p class="text-gray-500 mt-2 italic text-lg">"For Regular Skincare & Wellness"</p>
-        </div>
-
-        <!-- 400ml Variant -->
-        <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200 transition-transform transform hover:scale-105 hover:shadow-2xl">
-            <h3 class="text-xl font-bold text-gray-900 tracking-wide">400ml Almond Oil</h3>
-            <p class="text-gray-500 mt-2 italic text-lg">"For Long-Term & Family Use"</p>
-        </div>
-
-    </div>
-</section>
-
-<!-- 🔹 Process Overview on Homepage -->
-<section id="process" class="py-20 px-6 md:px-12 lg:px-24 bg-white">
-    <div class="max-w-6xl mx-auto text-center">
-        <h2 class="text-4xl md:text-5xl font-semibold text-gray-900 tracking-wide">
-            Our Process: The Journey of Purity
-        </h2>
-        <p class="mt-4 text-lg text-gray-600 font-light">
-            Every drop of our almond oil is a result of precision, purity, and devotion.
-        </p>
-    </div>
-
-    <!-- Step-by-Step Process Grid -->
-    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-6xl mx-auto">
-        
-        <!-- Step 1: Sourcing -->
-        <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200 text-center">
-            <h3 class="text-2xl font-semibold text-gray-900 tracking-wide">Step 1</h3>
-            <p class="text-gray-600 mt-2 font-medium">Sourcing the Finest Kashmiri Mamra Almonds</p>
-            <p class="mt-3 text-sm text-gray-500">
-                Handpicked from the purest Himalayan orchards, ensuring top quality.
-            </p>
-            <a href="process.html#sourcing" class="inline-block mt-4 text-sm text-blue-600 font-semibold hover:underline">
-                Know More →
-            </a>
-        </div>
-
-        <!-- Step 2: Cold-Pressing -->
-        <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200 text-center">
-            <h3 class="text-2xl font-semibold text-gray-900 tracking-wide">Step 2</h3>
-            <p class="text-gray-600 mt-2 font-medium">Cold-Pressed in Small Batches</p>
-            <p class="mt-3 text-sm text-gray-500">
-                Extracted gently to retain maximum nutrients and purity.
-            </p>
-            <a href="process.html#coldpress" class="inline-block mt-4 text-sm text-blue-600 font-semibold hover:underline">
-                Know More →
-            </a>
-        </div>
-
-        <!-- Step 3: Filtration -->
-        <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200 text-center">
-            <h3 class="text-2xl font-semibold text-gray-900 tracking-wide">Step 3</h3>
-            <p class="text-gray-600 mt-2 font-medium">Naturally Filtered for Maximum Purity</p>
-            <p class="mt-3 text-sm text-gray-500">
-                A slow gravity-based filtration process for absolute clarity.
-            </p>
-            <a href="process.html#filtration" class="inline-block mt-4 text-sm text-blue-600 font-semibold hover:underline">
-                Know More →
-            </a>
-        </div>
-
-        <!-- Step 4: Bottling -->
-        <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200 text-center">
-            <h3 class="text-2xl font-semibold text-gray-900 tracking-wide">Step 4</h3>
-            <p class="text-gray-600 mt-2 font-medium">Hand Bottled with Precision</p>
-            <p class="mt-3 text-sm text-gray-500">
-                Sealed in a hygienic environment to preserve its natural essence.
-            </p>
-            <a href="process.html#bottling" class="inline-block mt-4 text-sm text-blue-600 font-semibold hover:underline">
-                Know More →
-            </a>
-        </div>
-
-    </div>
-</section>
-
-    <!-- 🔹 Contact Section -->
-    <section id="contact" class="py-20 px-6 md:px-12 lg:px-24 bg-white">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl md:text-5xl font-semibold text-gray-900">Contact Us</h2>
-            <p class="mt-4 text-lg text-gray-600">
-                📞 Call/WhatsApp: <a href="tel:+919425930700" class="text-blue-500">+91 9425930700</a><br>
-                📷 Instagram: <a href="https://instagram.com/kasardevi.in" class="text-blue-500">@kasardevi.in</a><br>
-                📩 Email: <a href="mailto:pure@kasardevi.in" class="text-blue-500">pure@kasardevi.in</a><br>
-                📍 Address: Shreenath Plaza, 76 Tagore Marg, Neemuch 458441
-            </p>
+    <!-- Products Section -->
+    <section id="products" class="py-16 px-6 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-semibold text-gray-900 text-center">Our Products</h2>
+        <p class="text-gray-600 text-center mt-4">Crafted with the finest Kashmiri almonds.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            <div class="bg-white p-6 shadow-lg rounded-lg">
+                <h3 class="text-xl font-semibold">30ml - Best for Trial & Travel</h3>
+                <p class="text-gray-600 mt-2">Perfect for sampling or carrying on the go.</p>
+            </div>
+            <div class="bg-white p-6 shadow-lg rounded-lg">
+                <h3 class="text-xl font-semibold">100ml & 200ml - For Regular Skincare & Wellness</h3>
+                <p class="text-gray-600 mt-2">A daily essential for healthy skin and nourishment.</p>
+            </div>
+            <div class="bg-white p-6 shadow-lg rounded-lg">
+                <h3 class="text-xl font-semibold">400ml - For Long-Term & Family Use</h3>
+                <p class="text-gray-600 mt-2">Best for extended use and sharing within the family.</p>
+            </div>
         </div>
     </section>
 
