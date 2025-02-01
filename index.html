@@ -196,35 +196,52 @@
     </div>
 </section>
 
-  <!-- 🔹 Footer Section -->
-<footer class="bg-gray-900 text-gray-300 py-10 px-6 md:px-12 lg:px-24">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-        
-        <!-- Company Branding (Single Line) -->
-        <div class="mb-6 md:mb-0">
-            <h3 class="text-lg font-semibold text-white">Kasar Devi Wellness Private Limited</h3>
+    <!-- 🔹 Contact Section -->
+    <section id="contact" class="py-20 px-6 md:px-12 lg:px-24 bg-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-semibold text-gray-900">Contact Us</h2>
+            <p class="mt-4 text-lg text-gray-600">
+                📞 Call/WhatsApp: <a href="tel:+919425930700" class="text-blue-500">+91 9425930700</a><br>
+                📷 Instagram: <a href="https://instagram.com/kasardevi.in" class="text-blue-500">@kasardevi.in</a><br>
+                📩 Email: <a href="mailto:pure@kasardevi.in" class="text-blue-500">pure@kasardevi.in</a><br>
+                📍 Address: Shreenath Plaza, 76 Tagore Marg, Neemuch 458441
+            </p>
         </div>
+    </section>
 
-        <!-- Footer Links -->
-        <div class="flex space-x-6">
-            <a href="index.html#products" class="text-gray-400 hover:text-white transition">Products</a>
-            <a href="process.html" class="text-gray-400 hover:text-white transition">Process</a>
-            <a href="my-journey.html" class="text-gray-400 hover:text-white transition">My Journey</a>
-            <a href="index.html#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+    <!-- 🔹 Footer Section -->
+    <footer class="bg-gray-900 text-gray-300 py-10 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            
+            <!-- Company Name -->
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-lg font-semibold text-white">Kasar Devi Wellness Private Limited</h3>
+                <p class="text-sm text-gray-400">Crafting the Purest Almond Oil with Devotion</p>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="flex space-x-6">
+                <a href="index.html#products" class="text-gray-400 hover:text-white transition">Products</a>
+                <a href="process.html" class="text-gray-400 hover:text-white transition">Process</a>
+                <a href="my-journey.html" class="text-gray-400 hover:text-white transition">My Journey</a>
+                <a href="index.html#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="mt-6 md:mt-0 text-sm text-gray-500">
+                © <span id="year"></span> Kasar Devi Wellness Private Limited. All Rights Reserved.
+            </div>
+
         </div>
+    </footer>
 
-        <!-- Copyright (Aligned Neatly) -->
-        <div class="mt-6 md:mt-0 text-sm text-gray-500 text-center md:text-right">
-            © <span id="year"></span> All Rights Reserved.
-        </div>
+    <!-- JavaScript to Update Year Automatically -->
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
-    </div>
-</footer>
-
-<!-- JavaScript to Update Year Automatically -->
-<script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+</body>
+</html>
 
 </body>
 </html>
