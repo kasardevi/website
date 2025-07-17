@@ -1,231 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kasar Devi - Purest Almond Oil</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kasar Devi - Purest Almond Oil</title>
+
+  <!-- Tailwind via CDN with brand colors -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FFFFCC',
+            caribbean: '#116E67',
+          },
+        },
+      },
+    }
+  </script>
 </head>
-<body class="bg-gray-100">
+<body class="bg-cream text-caribbean">
 
-    <!-- 🔹 Navigation Bar -->
-    <nav class="fixed top-0 w-full bg-white shadow-md py-4 px-6">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold">Kasar Devi</a>
-            <div class="space-x-8 text-gray-700">
-                <a href="index.html#products" class="hover:text-gray-900 transition">Products</a>
-                <a href="process.html" class="hover:text-gray-900 transition">Process</a>
-                <a href="my-journey.html" class="hover:text-gray-900 transition">My Journey</a>
-                <a href="index.html#contact" class="text-gray-700 hover:text-gray-900">Contact</a>
-            </div>
-        </div>
-    </nav>
+  <!-- 🔹 Navigation Bar -->
+  <nav class="fixed top-0 w-full bg-cream shadow-md py-4 px-6">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-caribbean">Kasar Devi</a>
+      <div class="space-x-8">
+        <a href="index.html#products" class="hover:text-caribbean/80 transition">Products</a>
+        <a href="process.html" class="hover:text-caribbean/80 transition">Process</a>
+        <a href="my-journey.html" class="hover:text-caribbean/80 transition">My Journey</a>
+        <a href="index.html#contact" class="hover:text-caribbean/80 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-    <!-- 🔹 Hero Section -->
-    <section class="relative bg-gradient-to-b from-[#011046] to-[#050a30] text-white py-20 px-6 md:px-12 lg:px-24 mt-16">
-        <div class="absolute inset-0 bg-black opacity-30"></div>
-        <div class="max-w-6xl mx-auto text-center relative z-10">
-            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-white drop-shadow-lg">
-                The Purest Almond Oil, Crafted with Devotion
-            </h1>
-            <p class="mt-6 text-lg md:text-xl opacity-90 leading-relaxed text-gray-200 drop-shadow-md">
-                Sourced from the pristine orchards of Kashmir, cold-pressed in small batches, and 
-                hand-bottled with care—our oil is more than just a product, it’s a 
-                <strong class="text-white">promise of purity.</strong> Experience the <strong class="text-white">sacred essence</strong> of Kasar Devi in every drop.
-            </p>
-            <div class="mt-10">
-                <a href="#products" class="inline-block px-8 py-4 text-lg font-semibold 
-                rounded-full bg-[#FF4F4F] hover:bg-[#d93e3e] transition-all duration-300 shadow-lg">
-                    Discover Our Promise
-                </a>
-            </div>
-        </div>
-    </section>
+  <!-- 🔹 Hero Section -->
+  <section class="relative bg-caribbean text-cream py-20 px-6 md:px-12 lg:px-24 mt-16">
+    <div class="absolute inset-0 bg-caribbean opacity-30"></div>
+    <div class="max-w-6xl mx-auto text-center relative z-10">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight drop-shadow-lg">
+        The Purest Almond Oil, Crafted with Devotion
+      </h1>
+      <p class="mt-6 text-lg md:text-xl opacity-90 leading-relaxed drop-shadow-md">
+        Sourced from the pristine orchards of Kashmir, cold-pressed in small batches, and 
+        hand-bottled with care—our oil is more than just a product, it’s a 
+        <strong>promise of purity.</strong> Experience the <strong>sacred essence</strong> of Kasar Devi in every drop.
+      </p>
+      <div class="mt-10">
+        <a href="#products" class="inline-block px-8 py-4 text-lg font-semibold 
+        rounded-full bg-cream text-caribbean hover:bg-caribbean hover:text-cream transition-all duration-300 shadow-lg">
+          Discover Our Promise
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <!-- 🔹 Products Section -->
-    <section id="products" class="py-20 px-6 md:px-12 lg:px-24 bg-gray-50">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl md:text-5xl font-semibold text-gray-900 tracking-wide">Our Products</h2>
-            <p class="mt-4 text-lg text-gray-600 font-light">
-                Cold-pressed Kashmiri Mamra Almond Oil, crafted with devotion.
-            </p>
-        </div>
-        
-        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto">
-            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
-                <h3 class="text-xl font-bold text-gray-900">30ml Almond Oil</h3>
-                <p class="text-gray-500 mt-2 italic text-lg">"Best for Trial & Travel"</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
-                <h3 class="text-xl font-bold text-gray-900">100ml Almond Oil</h3>
-                <p class="text-gray-500 mt-2 italic text-lg">"For Regular Skincare & Wellness"</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
-                <h3 class="text-xl font-bold text-gray-900">200ml Almond Oil</h3>
-                <p class="text-gray-500 mt-2 italic text-lg">"For Regular Skincare & Wellness"</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
-                <h3 class="text-xl font-bold text-gray-900">400ml Almond Oil</h3>
-                <p class="text-gray-500 mt-2 italic text-lg">"For Long-Term & Family Use"</p>
-            </div>
-        </div>
-    </section>
-
-<!-- 🔹 Process Overview on Homepage -->
-<section id="process" class="py-20 px-6 md:px-12 lg:px-24 bg-white">
+  <!-- 🔹 Products Section -->
+  <section id="products" class="py-20 px-6 md:px-12 lg:px-24 bg-cream">
     <div class="max-w-6xl mx-auto text-center">
-        <h2 class="text-4xl md:text-5xl font-semibold text-gray-900 tracking-wide">
-            Our Process: The Journey of Purity
-        </h2>
-        <p class="mt-4 text-lg text-gray-600 font-light">
-            Every drop of our almond oil is a result of precision, purity, and devotion.
-        </p>
+      <h2 class="text-4xl md:text-5xl font-semibold tracking-wide">Our Products</h2>
+      <p class="mt-4 text-lg font-light">
+        Cold-pressed Kashmiri Mamra Almond Oil, crafted with devotion.
+      </p>
     </div>
 
-    <!-- Step-by-Step Process Grid -->
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto">
+      <div class="bg-cream p-6 rounded-lg shadow-lg border border-caribbean/30">
+        <h3 class="text-xl font-bold">30ml Almond Oil</h3>
+        <p class="mt-2 italic text-lg">"Best for Trial & Travel"</p>
+      </div>
+      <div class="bg-cream p-6 rounded-lg shadow-lg border border-caribbean/30">
+        <h3 class="text-xl font-bold">100ml Almond Oil</h3>
+        <p class="mt-2 italic text-lg">"For Regular Skincare & Wellness"</p>
+      </div>
+      <div class="bg-cream p-6 rounded-lg shadow-lg border border-caribbean/30">
+        <h3 class="text-xl font-bold">200ml Almond Oil</h3>
+        <p class="mt-2 italic text-lg">"For Regular Skincare & Wellness"</p>
+      </div>
+      <div class="bg-cream p-6 rounded-lg shadow-lg border border-caribbean/30">
+        <h3 class="text-xl font-bold">400ml Almond Oil</h3>
+        <p class="mt-2 italic text-lg">"For Long-Term & Family Use"</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Process Section -->
+  <section id="process" class="py-20 px-6 md:px-12 lg:px-24 bg-cream">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-semibold tracking-wide">
+        Our Process: The Journey of Purity
+      </h2>
+      <p class="mt-4 text-lg font-light">
+        Every drop of our almond oil is a result of precision, purity, and devotion.
+      </p>
+    </div>
+
     <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-6xl mx-auto">
-        
-        <!-- Step 1: Sourcing -->
-        <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200 text-center">
-            <h3 class="text-2xl font-semibold text-gray-900 tracking-wide">Step 1</h3>
-            <p class="text-gray-600 mt-2 font-medium">Sourcing the Finest Kashmiri Mamra Almonds</p>
-            <p class="mt-3 text-sm text-gray-500">
-                Handpicked from the purest Himalayan orchards, ensuring top quality.
-            </p>
-            <a href="process.html#sourcing" class="inline-block mt-4 text-sm text-blue-600 font-semibold hover:underline">
-                Know More →
-            </a>
-        </div>
-
-        <!-- Step 2: Cold-Pressing -->
-        <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200 text-center">
-            <h3 class="text-2xl font-semibold text-gray-900 tracking-wide">Step 2</h3>
-            <p class="text-gray-600 mt-2 font-medium">Cold-Pressed in Small Batches</p>
-            <p class="mt-3 text-sm text-gray-500">
-                Extracted gently to retain maximum nutrients and purity.
-            </p>
-            <a href="process.html#coldpress" class="inline-block mt-4 text-sm text-blue-600 font-semibold hover:underline">
-                Know More →
-            </a>
-        </div>
-
-        <!-- Step 3: Filtration -->
-        <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200 text-center">
-            <h3 class="text-2xl font-semibold text-gray-900 tracking-wide">Step 3</h3>
-            <p class="text-gray-600 mt-2 font-medium">Naturally Filtered for Maximum Purity</p>
-            <p class="mt-3 text-sm text-gray-500">
-                A slow gravity-based filtration process for absolute clarity.
-            </p>
-            <a href="process.html#filtration" class="inline-block mt-4 text-sm text-blue-600 font-semibold hover:underline">
-                Know More →
-            </a>
-        </div>
-
-        <!-- Step 4: Bottling -->
-        <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200 text-center">
-            <h3 class="text-2xl font-semibold text-gray-900 tracking-wide">Step 4</h3>
-            <p class="text-gray-600 mt-2 font-medium">Hand Bottled with Precision</p>
-            <p class="mt-3 text-sm text-gray-500">
-                Sealed in a hygienic environment to preserve its natural essence.
-            </p>
-            <a href="process.html#bottling" class="inline-block mt-4 text-sm text-blue-600 font-semibold hover:underline">
-                Know More →
-            </a>
-        </div>
-
-    </div>
-</section>
-
-<!-- 🔹 Contact Section (Refined) -->
-<section id="contact" class="py-20 px-6 md:px-12 lg:px-24 bg-gray-50">
-    <div class="max-w-6xl mx-auto text-center">
-        <h2 class="text-4xl md:text-5xl font-semibold text-gray-900">Get in Touch</h2>
-        <p class="mt-4 text-lg text-gray-600">
-            Have questions or need assistance? We’re here to help.
+      <div class="bg-cream p-6 rounded-lg shadow-md border border-caribbean/30 text-center">
+        <h3 class="text-2xl font-semibold tracking-wide">Step 1</h3>
+        <p class="mt-2 font-medium">Sourcing the Finest Kashmiri Mamra Almonds</p>
+        <p class="mt-3 text-sm">
+          Handpicked from the purest Himalayan orchards, ensuring top quality.
         </p>
+        <a href="process.html#sourcing" class="inline-block mt-4 text-sm font-semibold underline">
+          Know More →
+        </a>
+      </div>
 
-        <!-- Contact Details Grid -->
-        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-4xl mx-auto">
-            
-            <!-- 📞 Call/WhatsApp -->
-            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 text-center transition-transform transform hover:scale-105">
-                <h3 class="text-xl font-semibold text-gray-900">📞 Call / WhatsApp</h3>
-                <p class="text-gray-600 mt-2">
-                    Need assistance? Reach out to us directly.
-                </p>
-                <a href="tel:+919425930700" class="inline-block mt-4 text-blue-600 font-semibold hover:underline">
-                    +91 9425930700 →
-                </a>
-            </div>
+      <div class="bg-cream p-6 rounded-lg shadow-md border border-caribbean/30 text-center">
+        <h3 class="text-2xl font-semibold tracking-wide">Step 2</h3>
+        <p class="mt-2 font-medium">Cold-Pressed in Small Batches</p>
+        <p class="mt-3 text-sm">
+          Extracted gently to retain maximum nutrients and purity.
+        </p>
+        <a href="process.html#coldpress" class="inline-block mt-4 text-sm font-semibold underline">
+          Know More →
+        </a>
+      </div>
 
-            <!-- 📷 Instagram -->
-            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 text-center transition-transform transform hover:scale-105">
-                <h3 class="text-xl font-semibold text-gray-900">📷 Instagram</h3>
-                <p class="text-gray-600 mt-2">
-                    Follow us for updates & wellness inspiration.
-                </p>
-                <a href="https://instagram.com/kasardevi.in" target="_blank" class="inline-block mt-4 text-blue-600 font-semibold hover:underline">
-                    @kasardevi.in →
-                </a>
-            </div>
+      <div class="bg-cream p-6 rounded-lg shadow-md border border-caribbean/30 text-center">
+        <h3 class="text-2xl font-semibold tracking-wide">Step 3</h3>
+        <p class="mt-2 font-medium">Naturally Filtered for Maximum Purity</p>
+        <p class="mt-3 text-sm">
+          A slow gravity-based filtration process for absolute clarity.
+        </p>
+        <a href="process.html#filtration" class="inline-block mt-4 text-sm font-semibold underline">
+          Know More →
+        </a>
+      </div>
 
-            <!-- 📩 Email -->
-            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 text-center transition-transform transform hover:scale-105">
-                <h3 class="text-xl font-semibold text-gray-900">📩 Email</h3>
-                <p class="text-gray-600 mt-2">
-                    Prefer email? Drop us a message anytime.
-                </p>
-                <a href="mailto:pure@kasardevi.in" class="inline-block mt-4 text-blue-600 font-semibold hover:underline">
-                    pure@kasardevi.in →
-                </a>
-            </div>
-
-        </div>
-
-        <!-- 📍 Office Address (Separate & Elegant) -->
-        <div class="mt-12 text-center">
-            <h3 class="text-2xl font-semibold text-gray-900">📍 Office Address</h3>
-            <p class="text-lg text-gray-600 mt-2">
-                Shreenath Plaza, 76 Tagore Marg, Neemuch 458441
-        </div>
-
+      <div class="bg-cream p-6 rounded-lg shadow-md border border-caribbean/30 text-center">
+        <h3 class="text-2xl font-semibold tracking-wide">Step 4</h3>
+        <p class="mt-2 font-medium">Hand Bottled with Precision</p>
+        <p class="mt-3 text-sm">
+          Sealed in a hygienic environment to preserve its natural essence.
+        </p>
+        <a href="process.html#bottling" class="inline-block mt-4 text-sm font-semibold underline">
+          Know More →
+        </a>
+      </div>
     </div>
-</section>
+  </section>
 
+  <!-- 🔹 Contact Section -->
+  <section id="contact" class="py-20 px-6 md:px-12 lg:px-24 bg-cream">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-semibold">Get in Touch</h2>
+      <p class="mt-4 text-lg">
+        Have questions or need assistance? We’re here to help.
+      </p>
 
-    <!-- 🔹 Footer Section -->
-    <footer class="bg-gray-900 text-gray-300 py-10 px-6 md:px-12 lg:px-24">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-            
-            <!-- Company Name -->
-            <div class="mb-6 md:mb-0">
-                <h3 class="text-lg font-semibold text-white">Kasar Devi Wellness Private Limited</h3>
-                <p class="text-sm text-gray-400">Crafting the Purest Almond Oil with Devotion</p>
-            </div>
-
-            <!-- Footer Links -->
-            <div class="flex space-x-6">
-                <a href="index.html#products" class="text-gray-400 hover:text-white transition">Products</a>
-                <a href="process.html" class="text-gray-400 hover:text-white transition">Process</a>
-                <a href="my-journey.html" class="text-gray-400 hover:text-white transition">My Journey</a>
-                <a href="index.html#contact" class="text-gray-400 hover:text-white transition">Contact</a>
-            </div>
-
-            <!-- Copyright -->
-            <div class="mt-6 md:mt-0 text-sm text-gray-500">
-                © <span id="year"></span> Kasar Devi Wellness Private Limited. All Rights Reserved.
-            </div>
-
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-4xl mx-auto">
+        <div class="bg-cream p-6 rounded-lg shadow-md border border-caribbean/30 text-center transition-transform transform hover:scale-105">
+          <h3 class="text-xl font-semibold">📞 Call / WhatsApp</h3>
+          <p class="mt-2">Need assistance? Reach out to us directly.</p>
+          <a href="tel:+919425930700" class="inline-block mt-4 font-semibold underline">
+            +91 9425930700 →
+          </a>
         </div>
-    </footer>
 
-    <!-- JavaScript to Update Year Automatically -->
-    <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+        <div class="bg-cream p-6 rounded-lg shadow-md border border-caribbean/30 text-center transition-transform transform hover:scale-105">
+          <h3 class="text-xl font-semibold">📷 Instagram</h3>
+          <p class="mt-2">Follow us for updates & wellness inspiration.</p>
+          <a href="https://instagram.com/kasardevi.in" target="_blank" class="inline-block mt-4 font-semibold underline">
+            @kasardevi.in →
+          </a>
+        </div>
 
-</body>
-</html>
+        <div class="bg-cream p-6 rounded-lg shadow-md border border-caribbean/30 text-center transition-transform transform hover:scale-105">
+          <h3 class="text-xl font-semibold">📩 Email</h3>
+          <p class="mt-2">Prefer email? Drop us a message anytime.</p>
+          <a href="mailto:pure@kasardevi.in" class="inline-block mt-4 font-semibold underline">
+            pure@kasardevi.in →
+          </a>
+        </div>
+      </div>
 
+      <div class="mt-12 text-center">
+        <h3 class="text-2xl font-semibold">📍 Office Address</h3>
+        <p class="text-lg mt-2">
+          Shreenath Plaza, 76 Tagore Marg, Neemuch 458441
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Footer Section -->
+  <footer class="bg-caribbean text-cream py-10 px-6 md:px-12 lg:px-24">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+      <div class="mb-6 md:mb-0">
+        <h3 class="text-lg font-semibold">Kasar Devi Wellness Private Limited</h3>
+        <p class="text-sm">Crafting the Purest Almond Oil with Devotion</p>
+      </div>
+      <div class="flex space-x-6">
+        <a href="index.html#products" class="hover:underline">Products</a>
+        <a href="process.html" class="hover:underline">Process</a>
+        <a href="my-journey.html" class="hover:underline">My Journey</a>
+        <a href="index.html#contact" class="hover:underline">Contact</a>
+      </div>
+      <div class="mt-6 md:mt-0 text-sm">
+        &copy; <span id="year"></span> Kasar Devi Wellness Private Limited. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript to update year -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
